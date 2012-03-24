@@ -1,0 +1,312 @@
+body {
+	background: url("") repeat-x scroll 0 0 transparent;
+	font-family: sans-serif;
+	color: #333;
+	font-size:11px;
+	text-align:center;
+}
+.wrapper {
+	width:998px;
+	margin:5px auto 25px;
+	min-height: 500px;
+	vertical-align: middle;
+	padding-bottom:130px;
+	}
+	
+.header {
+	background-color:#ffffff;
+	width:100%;
+	height:60px;
+	}
+.header .header_container {
+    border-top:none;
+	height:60px;
+}
+.header .header_content {	
+	float:right;
+	width:600px;
+	}
+.footer {
+	height:auto;
+	padding:20px 10px;
+	text-align:center;
+	color:#BAB6B6;
+	}
+.container {
+	width:100%;
+	margin:0px auto;
+}
+
+.content {
+	margin:20px auto;
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.6);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,.6);
+    box-shadow: 0 1px 3px rgba(0,0,0,.6);
+    display:inline-block;
+}
+
+.navigation_bar {
+    background: none repeat scroll 0 0 #D71920;
+    float: left;
+    height: 28px;
+    margin-bottom: 10px;
+    margin-top: -1px;
+    padding-left: 1px;
+    position: relative;
+    width: 100%; 
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    display:inline-block;
+    }
+ul.navi_menu li {
+    list-style-type:none;
+    float:left;
+    margin-left:20px;
+    font-size:12px;
+    line-height:28px;
+    color:#ffffff;
+    }
+ul.navi_menu li a:link,
+ul.navi_menu li a:visited,
+ul.navi_menu li a {
+    color:#ffffff;
+    text-decoration:none;
+    }
+
+ul.navi_menu li a:hover {
+    text-shadow:2px 2px 3px #ffffff;
+}
+
+/************************** Form Styling is written below ************************************/
+form.styler table th {
+    color:#333333;
+    font-size:12px;
+    text-align:right;
+    border-bottom:1px solid #e9e9e9;
+    font-weight:normal;
+    padding:2px;
+    }
+
+form.styler table td {
+    color:#333333;
+    font-size:12px;
+    text-align:left;
+    border-bottom:1px solid #e9e9e9;
+    font-weight:normal;
+    }
+ul.errorlist li {
+    list-style-type:none;
+    }
+
+.errorlist {
+    color:#C00000;
+    margin-bottom:-6px;
+    text-shadow:1px 1px 0 #E4E4E4;
+    padding:0px;
+    font-size:10px;
+}
+.errors {
+    color:#C00000;
+    padding:0px;
+    font-size:10px;
+    text-align:center;
+    text-shadow:1px 1px 0 #E4E4E4;
+    background-color:#FFFD7D;
+    padding:5px;
+}
+tr.errors {
+    text-align:left!important;
+    text-shadow:none;
+}
+tr.errors td {
+    text-align:center!important;
+}
+
+/**
+form.styler table tr:hover,
+form.styler table td:hover,
+form.styler table th:hover {
+    background-color:#F6F6F6;
+}
+**/
+div.logo_text {
+    font-size:52px;
+    font-weight:bold;
+    font-family:"Helvetica";
+    color:#D2FFE0;
+}
+
+form.styler table th,
+form.login_form table th,
+form.styler table th label,
+form.login_form table th label {
+    margin-right:10px;
+    font-size:12px;
+    }
+.form_heading {
+    font-size:14px;
+    font-family: "Trebuchet MS";
+    }
+form.styler table {
+    margin:0px auto;
+    border:1px solid #D9D9D9;
+    width:100%;
+    border-spacing:0px;
+   }
+form.styler{
+    margin: 0px auto;
+    width:auto;
+    }
+form.styler .helptext {
+    font-size:10px;
+    font-style:italic;
+}
+form.styler input[type="checkbox"] {
+    border:1px solid #999999;
+    width:auto;
+    height:auto;
+    vertical-align:middle;
+}
+form.styler input[type="text"],
+form.styler input[type="password"]{
+    border:1px solid #999;
+    font-size:11px;
+    color:#666;
+    padding:3px;
+    text-align:left;
+    margin:7px 0px;
+    width:80%;
+    background-color:#F1F1F1;
+    }
+form.styler select {
+    border:1px solid #999;
+    background-color:#f6f6f6;
+    font-size:12px;
+    text-align:left;
+    margin:7px 0px;
+    color:#333;
+    }
+
+form { 
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #666;
+    }
+form.styler textarea {
+    width:80%;
+    border:1px solid #999999;
+    height:80px;
+    margin-top:6px;
+    overflow-y:scroll;
+}
+div.form_heading {
+    background-color: #F2F2F2;
+    border: 3px solid #E9E9E9;
+    color: #42A2D2;
+    font-family: "helvetica";
+    font-size: 24px;
+    line-height: 35px;
+    padding: 5px 5px 10px;
+    text-align: center;
+}
+/******************************** Table Styling **************************************************/
+
+table.formal_style {
+    background-color:#f9f9f9;
+    width:100%;
+    border-spacing:0px;
+    margin:0px auto;
+}
+
+table.formal_style th {
+    background-color: #555555;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #999999;
+    color: #F9F9F9;
+    font-size:14px;
+    font-weight: normal;
+    height: 30px;
+    padding: 3px;
+    text-align:center!important;
+}
+
+table.formal_style td {
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #999999;
+    font-size: 10px;
+    padding: 3px;
+}
+table.formal_style td.action {
+    text-align:center;
+    }
+.odd {
+    background-color: #F8F8F8 !important;
+}
+.even {
+    background-color: #F1F1F1 !important;
+}
+div.table_heading {
+    background-color: #333333;
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 30px;
+    margin-top: 30px;
+    margin:30px auto 0px;
+    text-align: center;
+    width: 100%;
+}
+/********************************** Script for POPUP written below **********************************/
+.popup_cloud{
+    background-color:#777777;
+    filter:alpha(opacity=50)!important;
+    opacity:0.5;
+    width:100%;
+    height:120%;
+    position:fixed;
+    left:0px;
+    top:0px;
+    z-index:99;
+    overflow:hidden;
+    display:none;
+}
+div.popup {
+    position:fixed;
+    top:70px;
+    left:435px;
+    text-align:center;
+    background-color:#f9f9f9;
+    color:#333333;
+    display:none;
+    z-index:6000;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.6);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,.6);
+    box-shadow: 0 1px 3px rgba(0,0,0,.6);
+    }
+span.close_popup {
+    background-image:url('/static/images/close_grey.png');
+    text-align:right;
+    float:right;
+    font-weight:bold;
+    color:#fff;
+    padding:4px 6px;
+    cursor:pointer;
+    width:14px;
+    height:18px;
+    position:relative;
+    right:-17px;
+    top:-20px;
+}
+span.close_popup:hover {
+   background-image:url('/static/images/close_red.png');
+   repeat:no-repeat;
+}
+div.popup_content {
+    margin:20px auto;
+    padding:3px;
+    }
+
+/************************** POPUP STYLING ENDS HERE ****************************/

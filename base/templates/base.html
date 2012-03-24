@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" class="js">
+<head>
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<title>Base Project</title>
+<link rel="shortcut icon" href="{{static_path}}//images/favicon.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" href="{{static_path}}/css/reset.css" />
+<link type="text/css" rel="stylesheet" href="{{static_path}}/css/style.css" />
+<!--[if IE]>
+    <link rel="stylesheet" href="{{static_path}}/css/ie_colors.css" type="text/css" />
+<![endif]-->
+    <link type="text/css" rel="stylesheet" href="{{static_path}}/css/colors.css" />
+{%block header_js_css%}{%endblock header_js_css%}
+</head>
+
+<body>
+
+<!--Wrapper Begins -->
+<div class="wrapper">
+    <!--Header Begins -->
+    <div class="header">
+        <div class="header_container clearfix">
+            <a href = "/"><img src="{{static_path}}/images/logofont.png" style="float:left;"/></a>
+            <div class="header_content">
+                {%if request.user.is_authenticated%}
+                    {{request.user.get_full_name}}
+                    <br />
+                    <a href="/accounts/logout/">Logout</a>
+                    {%else%}
+                    <a href="/accounts/login/">Login</a>
+                {%endif%}
+            </div>
+         </div>
+    </div>
+    <!-- Header Ends -->
+
+    <!--Container Begins-->
+    <div class="container">
+        <!-- Content Begins -->
+        <div class="content">
+        {%block main%}{%endblock%}
+        </div>
+
+        <!-- Content Ends -->
+    </div>
+    <!-- Container Ends -->
+</div>
+<!-- Wrapper Ends -->
+
+<!-- Footer Begins -->
+
+<div class="footer">This is the footer, the footer content goes here, please write your footer content here.</div>
+    <!-- Footer Ends -->
+
+{%block footer_js_css%}{%endblock%}
+</body>
+
+</html>
+

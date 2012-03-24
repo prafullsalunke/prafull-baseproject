@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+<div class="form-container">
+    {% if form.errors %}
+        <div class="errors"  style="width:200px;height:50px;position:absolute;top:70px;">
+            <p class="error">Sorry, that's not a valid username or password</p>
+        </div>
+    {% endif %}
+
+    <form action="." method="post" class="styler">
+        <div style="color:#49C264;font-size:22px;line-height:50px;background-color:#e7e7e7;width:498px;margin:0px auto;border:1px solid #d9d9d9;">Sign-in to your My Project Account</div>
+        <table style="width:500px;">
+            <tbody>
+                <tr>
+                    <th>Username :</th>
+                    <td>
+                        <input type="text" name="username" class="inputbox" id="id_username">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Password :</th>
+                    <td>
+                        <input type="password" name="password" class="inputbox" id="id_password">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align:center;">
+                        <a href="/accounts/resend-password/">Forgot Password?</a>
+                        <input id="id_btn" class="roundbutton metal" type="submit" name="btnlogin" value="Sign-in" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class='hide'>
+            <input type="hidden" name="next" value="{{ next }}" />
+        </div>
+        
+</form>
+
+</div>
+
+{%endblock%}
+
+{% block footer_js_css %} 
+<style type="text/css">
+    form.styler table th {
+        width:200px;
+    }
+</style>
+<script src="{{ static_path }}/js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="{{ static_path }}/js/jquery.jqtransform.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+    $('#id_username,#id_password').focus(function(){
+        $('div.errors').fadeOut();
+    });
+});
+
+</script>
+
+{%endblock%}
